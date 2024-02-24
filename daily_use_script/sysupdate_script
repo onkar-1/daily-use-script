@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "update system........"
+apt update && apt upgrade -y
+
+echo "system update and upgrade successfully"
