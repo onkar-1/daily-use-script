@@ -1,0 +1,14 @@
+apiversion: v1
+kind: service
+metadata:
+  name: reddit-clone-service
+  labels:
+     app: reddit-clone
+spec:
+  type: NodePort
+  ports:
+  - port: 3000
+    targetport: 3000
+    nodeport: 31000
+  selector: reddit-clone
+ 

@@ -1,0 +1,12 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: my-pod
+  labels:
+    app:
+spec:
+  containers:
+  - name: my-pod
+    image: ubuntu
+    ports:
+    - containerport: 8000
