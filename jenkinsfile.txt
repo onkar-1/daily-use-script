@@ -1,0 +1,33 @@
+#jenkins file for maven project
+
+
+pipeline {
+    agent any 
+    
+    stages {
+        stage('clone') {
+            steps {
+                echo "clone the code"
+                git url: "https://github.com/onkar-1/daily-use-script.git", branch: "main"
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "build the code"
+                sh "mvn clean install"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "test the code"
+                sh "mvn test"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "deploy the application"
+                sh "deploy.sh"
+            }
+        }
+    }
+}

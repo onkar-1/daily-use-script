@@ -11,3 +11,4 @@ sudo passwd onkar
 su - onkar
 sudo su -onkar
 sudo su - onkar
+sudo su
