@@ -12,3 +12,8 @@ su - onkar
 sudo su -onkar
 sudo su - onkar
 sudo su
+clear
+sudo su
+sudo su
+./a2.txt
+sudo su
